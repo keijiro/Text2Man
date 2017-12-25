@@ -62,13 +62,14 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intro: 2.5
+    - _Intro: 1.8
     - _LocalTime: 10
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Outro: 1.5
+    - _Outro: -2
     - _Parallax: 0.02
+    - _Radius: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
