@@ -1,12 +1,8 @@
-﻿Shader "TextBlob"
+﻿Shader "Hidden/NoiseBlob"
 {
     Properties
     {
         _Color("Color", Color) = (1, 1, 1, 1)
-        _Radius("Radius", Float) = 1
-        _Intro("Intro", Float) = 0
-        _Outro("Outro", Float) = 0
-        _LocalTime("Animation Time", Float) = 0
     }
 
     CGINCLUDE
@@ -15,6 +11,7 @@
     #include "SimplexNoise3D.hlsl"
 
     half4 _Color;
+
     float _Radius;
     float _Intro;
     float _Outro;
