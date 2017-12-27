@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 namespace Text2Man
 {
     [ExecuteInEditMode]
-    class NoiseBlobRenderer : MonoBehaviour, ITimeControl
+    class NoiseBlobRenderer : MonoBehaviour, ITimeControl, IPropertyPreview
     {
         #region Editable properties
 
@@ -45,6 +46,14 @@ namespace Text2Man
                 var bounds = _mesh.bounds;
                 return Mathf.Max(-bounds.min.x, bounds.max.x);
             }
+        }
+
+        #endregion
+
+        #region IPropertyPreview implementation
+
+        public void GatherProperties(PlayableDirector director, IPropertyCollector driver)
+        {
         }
 
         #endregion
